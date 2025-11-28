@@ -1,0 +1,16 @@
+<section
+  class="section"
+  [class.bg-white]="backgroundColor === 'bg-white'"
+  [class.bg-gray]="backgroundColor.includes('gray')"
+  [class.bg-gradient]="backgroundColor.includes('gradient')"
+  [attr.aria-labelledby]="id ? id + '-heading' : null"
+>
+  <div class="section-container">
+    <h2 *ngIf="title" [id]="id ? id + '-heading' : null" class="section-title">
+      {{ title }}
+    </h2>
+    <div class="section-content">
+      <ng-content></ng-content>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,19 @@
+<section class="image-section">
+  <div class="image-container">
+    <h2 *ngIf="title" class="image-section-title">{{ title }}</h2>
+    <p *ngIf="description" class="image-section-description">{{ description }}</p>
+    <div class="images-grid">
+      <figure *ngFor="let image of images" class="image-card">
+        <img
+          [src]="image.url"
+          [alt]="image.alt"
+          class="image"
+          loading="lazy"
+        />
+        <figcaption *ngIf="image.caption" class="image-caption">
+          {{ image.caption }}
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>

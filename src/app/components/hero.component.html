@@ -1,0 +1,29 @@
+<section class="hero" role="banner" [attr.aria-label]="ariaLabel">
+  <div class="hero-background" aria-hidden="true"></div>
+  <div class="hero-pattern" aria-hidden="true"></div>
+  <div class="hero-content">
+    <h1 class="hero-title">{{ title }}</h1>
+    <p class="hero-subtitle">{{ subtitle }}</p>
+    <button
+      *ngIf="showScroll"
+      class="scroll-indicator"
+      (click)="scrollToContent()"
+      aria-label="Scroll to content"
+      type="button"
+    >
+      <svg
+        class="scroll-icon"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M19 14l-7 7m0 0l-7-7m7 7V3"
+        />
+      </svg>
+    </button>
+  </div>
+</section>

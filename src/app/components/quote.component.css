@@ -1,0 +1,85 @@
+.quote {
+  padding: 3rem 1rem;
+  background-color: #f9fafb;
+}
+
+.quote.bg-blue {
+  background-color: #eff6ff;
+}
+
+.quote.bg-indigo {
+  background-color: #eef2ff;
+}
+
+.quote.bg-purple {
+  background-color: #faf5ff;
+}
+
+.quote.bg-green {
+  background-color: #f0fdf4;
+}
+
+.quote-content {
+  max-width: 48rem;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.quote-mark {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 0 auto 1rem;
+  color: rgba(59, 130, 246, 0.2);
+}
+
+.quote-text {
+  font-size: 1.25rem;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  color: #1f2937;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.quote-attribution {
+  font-size: 1rem;
+  color: #4b5563;
+}
+
+.quote-author {
+  font-style: normal;
+  font-weight: 600;
+}
+
+.quote-context {
+  color: #6b7280;
+}
+
+/* Responsive design */
+@media (min-width: 640px) {
+  .quote {
+    padding: 4rem 1.5rem;
+  }
+
+  .quote-mark {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .quote-text {
+    font-size: 1.5rem;
+  }
+
+  .quote-attribution {
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .quote-text {
+    font-size: 1.875rem;
+  }
+}

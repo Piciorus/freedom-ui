@@ -1,0 +1,32 @@
+<section
+  class="gallery"
+  [attr.aria-labelledby]="id ? id + '-heading' : null"
+>
+  <div class="gallery-container">
+    <h2 *ngIf="title" [id]="id ? id + '-heading' : null" class="gallery-title">
+      {{ title }}
+    </h2>
+    <div class="gallery-grid" role="list">
+      <article
+        *ngFor="let item of items"
+        class="gallery-card"
+        [class.card-blue]="item.color.includes('blue')"
+        [class.card-purple]="item.color.includes('purple')"
+        [class.card-green]="item.color.includes('green')"
+        [class.card-yellow]="item.color.includes('yellow')"
+        [class.card-pink]="item.color.includes('pink')"
+        [class.card-indigo]="item.color.includes('indigo')"
+        role="listitem"
+      >
+        <div class="card-content">
+          <div class="card-icon" aria-hidden="true">
+            <span class="icon">{{ item.icon }}</span>
+          </div>
+          <h3 class="card-title">{{ item.title }}</h3>
+          <p class="card-description">{{ item.description }}</p>
+        </div>
+        <div class="card-overlay" aria-hidden="true"></div>
+      </article>
+    </div>
+  </div>
+</section>
