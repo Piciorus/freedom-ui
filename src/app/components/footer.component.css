@@ -47,6 +47,40 @@
 }
 
 /* Responsive design */
+/* Very narrow screens - 157px to 414px */
+@media (max-width: 414px) {
+  .footer {
+    padding: 2rem 0.5rem;
+  }
+
+  .footer-container {
+    padding: 0 0.5rem;
+  }
+
+  .footer-title {
+    font-size: 1.125rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .footer-description {
+    font-size: 0.8125rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+
+  .footer-divider {
+    margin: 1.5rem 0 1rem;
+  }
+
+  .footer-info {
+    font-size: 0.75rem;
+  }
+
+  .footer-credits {
+    font-size: 0.6875rem;
+  }
+}
+
 @media (min-width: 640px) {
   .footer {
     padding: 4rem 1.5rem;

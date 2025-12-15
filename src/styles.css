@@ -18,6 +18,10 @@ body {
   line-height: 1.6;
   color: #1f2937;
   background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 h1,
@@ -91,7 +95,15 @@ img {
 }
 
 /* Responsive text sizes */
-@media (max-width: 640px) {
+@media (max-width: 414px) {
+  .section-content p {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 415px) and (max-width: 640px) {
   .section-content p {
     font-size: 1rem;
   }

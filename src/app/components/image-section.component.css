@@ -67,6 +67,41 @@
 }
 
 /* Responsive design */
+/* Very narrow screens - 157px to 414px */
+@media (max-width: 414px) {
+  .image-section {
+    padding: 2rem 0.5rem;
+  }
+
+  .image-container {
+    padding: 0 0.5rem;
+  }
+
+  .image-section-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .image-section-description {
+    font-size: 0.875rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+  }
+
+  .images-grid {
+    gap: 1rem;
+  }
+
+  .image {
+    max-height: 250px;
+  }
+
+  .image-caption {
+    padding: 0.75rem;
+    font-size: 0.75rem;
+  }
+}
+
 @media (min-width: 640px) {
   .image-section {
     padding: 5rem 1.5rem;

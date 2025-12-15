@@ -58,6 +58,33 @@
 }
 
 /* Responsive design */
+/* Very narrow screens - 157px to 414px */
+@media (max-width: 414px) {
+  .quote {
+    padding: 2rem 0.5rem;
+  }
+
+  .quote-content {
+    padding: 0 0.5rem;
+  }
+
+  .quote-mark {
+    width: 1.75rem;
+    height: 1.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .quote-text {
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+
+  .quote-attribution {
+    font-size: 0.75rem;
+  }
+}
+
 @media (min-width: 640px) {
   .quote {
     padding: 4rem 1.5rem;

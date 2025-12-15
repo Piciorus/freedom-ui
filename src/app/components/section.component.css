@@ -38,6 +38,27 @@
 }
 
 /* Responsive design */
+/* Very narrow screens - 157px to 414px */
+@media (max-width: 414px) {
+  .section {
+    padding: 2rem 0.5rem;
+  }
+
+  .section-container {
+    padding: 0 0.5rem;
+  }
+
+  .section-title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .section-content {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+}
+
 @media (min-width: 640px) {
   .section {
     padding: 5rem 1.5rem;

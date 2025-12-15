@@ -115,6 +115,51 @@
 }
 
 /* Responsive design */
+/* Very narrow screens - 157px to 414px */
+@media (max-width: 414px) {
+  .gallery {
+    padding: 2rem 0.5rem;
+  }
+
+  .gallery-container {
+    padding: 0 0.5rem;
+  }
+
+  .gallery-title {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .gallery-grid {
+    gap: 1rem;
+  }
+
+  .card-content {
+    padding: 1rem;
+  }
+
+  .card-icon {
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 0.75rem;
+    border-radius: 0.5rem;
+  }
+
+  .icon {
+    font-size: 1rem;
+  }
+
+  .card-title {
+    font-size: 0.9375rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-description {
+    font-size: 0.75rem;
+    line-height: 1.4;
+  }
+}
+
 @media (min-width: 640px) {
   .gallery {
     padding: 5rem 1.5rem;
