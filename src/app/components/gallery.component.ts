@@ -5,7 +5,6 @@ export interface GalleryItem {
   title: string;
   description: string;
   color: string;
-  icon: string;
 }
 
 @Component({
